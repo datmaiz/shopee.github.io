@@ -22,6 +22,9 @@ header {
   height: 15vh;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 
 .navbar {
@@ -192,6 +195,7 @@ header {
 section {
   width: 80%;
   margin: 0 auto;
+  margin-top: 150px;
 }
 
 section img {
@@ -470,7 +474,11 @@ section img {
   height: 15px;
   text-align: center;
   border-radius: 50px;
-  background-image: linear-gradient(to right, var(--primary-color) var(--percent), #ffbda6 1%);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) var(--percent),
+    #ffbda6 1%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,4 +527,186 @@ section img {
   background-size: contain;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.promotion {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.promotion__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.promotion__top-left {
+  display: flex;
+  gap: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion__top-left span:first-child {
+  border-right: 2px solid #ccc;
+  padding-right: 10px;
+}
+
+.promotion__top span a {
+  color: var(--primary-color);
+}
+
+.promotion__top span {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.promotion__top-left span:first-child a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.promotion__top-left span i {
+  padding: 3px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.promotion__top-right span a i {
+  padding: 0 5px;
+}
+
+.promotion__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  overflow: hidden;
+}
+
+.promotion__slider {
+  overflow: hidden;
+  width: 380px;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  animation: slide 16s infinite linear;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  27.5% {
+    transform: translateX(-200%);
+  }
+  37.5% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  52.5% {
+    transform: translateX(-400%);
+  }
+  62.5% {
+    transform: translateX(-400%);
+  }
+  65% {
+    transform: translateX(-500%);
+  }
+  75% {
+    transform: translateX(-500%);
+  }
+  77.5% {
+    transform: translateX(-600%);
+  }
+  87.5% {
+    transform: translateX(-600%);
+  }
+  90% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(-700%);
+  }
+}
+
+.back__left {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.25s linear;
+}
+
+.back__right {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.25s linear;
+}
+
+.promotion__slider:hover .back__left,
+.promotion__slider:hover .back__right {
+  opacity: 1;
+}
+
+.promotion__product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 10px;
+}
+
+.promotion__product-item {
+  text-align: center;
+}
+
+.promotion__product-item img {
+  width: 180px;
+}
+
+.promotion__product-item div {
+  text-align: center;
+  color: var(--primary-color);
 }
