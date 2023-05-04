@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://w7.pngwing.com/pngs/245/945/png-transparent-shopee-indonesia-online-shopping-android-receive-link-free-android-text-rectangle-orange-thumbnail.png"
+      type="image/x-icon"
+    />
+    <title>Shopee lỏ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar__left">
+          <ul>
+            <li>
+              <a href="">Kênh Người Bán</a>
+            </li>
+            <hr />
+            <li>
+              <a href="">Trở Thành Người Bán Shopee</a>
+            </li>
+            <hr />
+            <li>
+              <a href="">Tải Ứng Dụng</a>
+              <div class="shopee__QR">
+                <img
+                  src="data:image/png;base64,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"
+                  alt=""
+                />
+                <div>
+                  <span>
+                    <img
+                      src="https://cdn2.vectorstock.com/i/1000x1000/43/41/apple-logo-computer-ipad-iphone-software-vector-19944341.jpg"
+                      alt=""
+                    />
+                    <p>Apple Store</p>
+                  </span>
+                  <span>
+                    <img
+                      src="https://img.freepik.com/free-icon/playstore_318-278806.jpg?w=2000"
+                      alt=""
+                    />
+                    <p>Google Play</p>
+                  </span>
+                  <span>
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <p>AppGallery</p>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <span>
+                <span>Kết Nối</span>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <ul>
+            <li>
+              <i class="fa-regular fa-bell"></i>
+              <a href="">Thông Báo</a>
+            </li>
+            <hr />
+            <li>
+              <i class="fa-solid fa-question"></i>
+              <a href="">Hỗ Trợ</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-globe"></i>
+              <a href="">Tiếng Việt</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="">Đăng kí</a>
+            </li>
+            <hr />
+            <li>
+              <a href="">Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__bottom-logo">
+          <img
+            src="https://freelogopng.com/images/all_img/1656181621shopee-logo-white.png"
+            alt=""
+          />
+        </div>
+        <div class="header__bottom-kind">
+          <div class="header-kind-search">
+            <input
+              type="text"
+              placeholder="Đăng kí và nhận voucher bạn mới lên đến 70k!"
+            />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="header-kind-list">
+            <ul>
+              <li><a href="">Iphone 14 Promax</a></li>
+              <li><a href="">Dép</a></li>
+              <li><a href="">Áo phông</a></li>
+              <li><a href="">Áo Đá Bóng</a></li>
+              <li><a href="">Đồ Dùng Học Tập</a></li>
+              <li><a href="">Kẹp Tóc</a></li>
+              <li><a href="">Áo Kiểu</a></li>
+              <li><a href="">Quạt Cầm Tay</a></li>
+              <li><a href="">Bút</a></li>
+              <li><a href="">Váy</a></li>
+              <li><a href="">Nhẫn</a></li>
+              <li><a href="">Áo Polo</a></li>
+              <li><a href="">Bình Nước</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__bottom-buy">
+          <button><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section__advertise-container">
+        <div class="advert__items">
+          <img
+            src="https://magiamgiashopee.vn/wp-content/uploads/2023/04/shopee-5.5.png"
+            alt=""
+          />
+        </div>
+        <div class="advert__item">
+          <img
+            src="https://magiamgiashopee.vn/wp-content/uploads/2023/04/shopee-5.5.png"
+            alt=""
+          />
+        </div>
+        <div class="advert__item">
+          <img
+            src="https://magiamgiashopee.vn/wp-content/uploads/2023/04/shopee-5.5.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="section__function">
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Khung Giờ Săn Sale</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-8d6d5ee795e7675fed39d31ba04c3b92_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Hàng Hiệu Giá Tốt</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-8a387d78a7ad954ec489d3ef9abd60b4_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Mã Giảm Giá</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Miễn Phí Vận Chuyển</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-1975fb1af4ae3c22878d04f6f440b6f9_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Bắt Trend - Giá Sốc</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/vn-50009109-1975fb1af4ae3c22878d04f6f440b6f9_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Vouncher Giảm Đến 200.000Đ</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Gì Cũng Rẻ - Mua Là Freeship</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Hàng Quốc Tế</span>
+        </div>
+        <div class="section__choosen-item">
+          <img
+            src="https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi"
+            alt=""
+          />
+          <span class="choosen__desc">Nạp Điện Thoại & Thẻ Game</span>
+        </div>
+      </div>
+    </section>
+    <div class="shopee__outlet">
+      <div class="outlet__img">
+        <img
+          src="https://down-vn.img.susercontent.com/file/vn-50009109-0b8dd9b3276e8f64a18eade9dba5a9f2"
+          alt=""
+        />
+      </div>
+      <div class="outlet__container">
+        <div class="outlet__content">
+          <div class="outlet__content-item">
+            <div class="outlet__content-title">
+              <span class="outlet__content-deal">DEAL HOT CHO BẠN</span>
+              <span class="outlet__content-more"><a href="">Xem thêm></a></span>
+            </div>
+            <div class="outlet__content-product">
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/7bcb052ead3544b7f2ff47b1b5b779ca_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">₫499.000</div>
+              </div>
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/bcfd2a87ca984a14984855ddf5b8213d_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">₫475.000</div>
+              </div>
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/sg-11134201-22120-ocig7s06tplvdc_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">₫350.000</div>
+              </div>
+            </div>
+          </div>
+          <div class="outlet__content-item">
+            <div class="outlet__content-title">
+              <span class="outlet__content-deal">HÀNG HIỆU TỐT</span>
+              <span class="outlet__content-more"><a href="">Xem thêm></a></span>
+            </div>
+            <div class="outlet__content-product">
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/7bcb052ead3544b7f2ff47b1b5b779ca_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">GIẢM ĐẾN 20%</div>
+              </div>
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/bcfd2a87ca984a14984855ddf5b8213d_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">GIẢM ĐẾN 50%</div>
+              </div>
+              <div class="product__item">
+                <div class="product-img">
+                  <img
+                    src="https://down-vn.img.susercontent.com/file/sg-11134201-22120-ocig7s06tplvdc_tn"
+                    alt=""
+                  />
+                </div>
+                <div class="product__cost">=GIẢM ĐẾN 20%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category">
+      <p class="category__title">DANH MỤC</p>
+      <div class="category__product-list">
+        <div class="category__product-next"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b_tn"
+            alt=""
+          />
+          <div>Thời Trang Nam</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="	https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca_tn"
+            alt=""
+          />
+          <div>Điện Thoại & Phụ Kiện</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/978b9e4cb61c611aaaf58664fae133c5_tn"
+            alt=""
+          />
+          <div>Thiết Bị Điện Tử</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d_tn"
+            alt=""
+          />
+          <div>Máy Tính Và Laptop</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/ec14dd4fc238e676e43be2a911414d4d_tn"
+            alt=""
+          />
+          <div>Máy Tính & Máy Quay Phim</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260_tn"
+            alt=""
+          />
+          <div>Đồng Hồ</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de_tn"
+            alt=""
+          />
+          <div>Giày Dép Nam</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/7abfbfee3c4844652b4a8245e473d857_tn"
+            alt=""
+          />
+          <div>Thiết Bị Điện Gia Dụng</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/6cb7e633f8b63757463b676bd19a50e4_tn"
+            alt=""
+          />
+          <div>Thể Thao & Du Lịch</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/3fb459e3449905545701b418e8220334_tn"
+            alt=""
+          />
+          <div>Ô Tô & Xe Máy & Xe Đạp</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d_tn"
+            alt=""
+          />
+          <div>Thời Trang Nữ</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/099edde1ab31df35bc255912bab54a5e_tn"
+            alt=""
+          />
+          <div>Mẹ & Bé</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/24b194a695ea59d384768b7b471d563f_tn"
+            alt=""
+          />
+          <div>Nhà Cửa & Đời Sống</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/ef1f336ecc6f97b790d5aae9916dcb72_tn"
+            alt=""
+          />
+          <div>Sắc Đẹp</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/49119e891a44fa135f5f6f5fd4cfc747_tn"
+            alt=""
+          />
+          <div>Sức Khỏe</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/48630b7c76a7b62bc070c9e227097847_tn"
+            alt=""
+          />
+          <div>Giày Dép Nữ</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/fa6ada2555e8e51f369718bbc92ccc52_tn"
+            alt=""
+          />
+          <div>Túi Ví Nữ</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/8e71245b9659ea72c1b4e737be5cf42e_tn"
+            alt=""
+          />
+          <div>Phụ Kiện & Trang Sức Nữ</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/c432168ee788f903f1ea024487f2c889_tn"
+            alt=""
+          />
+          <div>Bách Hóa Online</div>
+        </div>
+        <div class="category__product-item">
+          <img
+            src="https://down-vn.img.susercontent.com/file/36013311815c55d303b0e6c62d6a8139_tn"
+            alt=""
+          />
+          <div>Nhà Sách Online</div>
+        </div>
+      </div>
+    </div>
+    <div class="flash-sale">
+      <div class="falsh-sale-top">
+        <div class="flash-sale-img">
+          <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fb1088de81e42c4e538967ec12cb5caa.png" alt="">
+        </div>
+        <div class="flash-sale-all">
+          <a href="">Xem Tất Cả <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="flash-sale-product">
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-80adedd0b60857e5f1f188775117bec9_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫287.000</div>
+          <div class="flash-sale-progress" style="--percent: 40%">
+            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/c5316dd01de2b0d41d267a57f5b32844.png" alt="">
+            <span>Đã bán 69</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-1934f97827eefd0823245027cdc7c538_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫149.000</div>
+          <div class="flash-sale-progress" style="--percent: 40%">
+            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/c5316dd01de2b0d41d267a57f5b32844.png" alt="">
+            <span>Đã bán 81</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-6b5e11d6ae7fb42a08fb705cfd41288d_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫105.000</div>
+          <div class="flash-sale-progress" style="--percent: 50%">
+            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/c5316dd01de2b0d41d267a57f5b32844.png" alt="">
+            <span>Đã bán 121</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-b79a87853947cecbd97a9b9032532362_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫159.000</div>
+          <div class="flash-sale-progress" style="--percent: 20%">
+            <img src="" alt="">
+            <span>Đã bán 49</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/bcdd3c42b0523593fdbc79640f3e862c_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫159.000</div>
+          <div class="flash-sale-progress" style="--percent: 10%">
+            <img src="" alt="">
+            <span>Đang bán chạy</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/0d711d7f4cc35c3d49de7eb470390043_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫2.200.000</div>
+          <div class="flash-sale-progress" style="--percent: 5%">
+            <img src="" alt="">
+            <span>Đang bán chạy</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfryeorke8a291_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫503.000</div>
+          <div class="flash-sale-progress" style="--percent: 5%">
+            <img src="" alt="">
+            <span>Đang bán chạy</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/d0476302d951f044742ee7c8ebf37037_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫41.500</div>
+          <div class="flash-sale-progress" style="--percent: 65%">
+            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/c5316dd01de2b0d41d267a57f5b32844.png" alt="">
+            <span>Đã bán 21</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/b8b9acc8783dfd167c8cf2b246b515a7_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫80.000</div>
+          <div class="flash-sale-progress" style="--percent: 5%">
+            <img src="" alt="">
+            <span>Đang bán chạy</span>
+          </div>
+        </div>
+        <div class="product-sale-product-item">
+          <div class="product__img">
+            <div class="product__img-bg">
+              <img src="https://down-vn.img.susercontent.com/file/vn-50009109-90547ad844da41a529a02b5e6ec979f9_tn" alt="">
+            </div>
+            <div class="product__img-img">
+              <img src="https://down-vn.img.susercontent.com/file/sg-11134201-22100-pbj852dustivdc_tn" alt="">
+            </div>
+          </div>
+          <div class="flash-sale-cost">₫139.000</div>
+          <div class="flash-sale-progress" style="--percent: 5%">
+            <img src="" alt="">
+            <span>Đang bán chạy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopee__image-inner"></div>
+    <div class="promotion">
+      <div class="promotion__top"></div>
+      <div class="promotion__container">
+        
+      </div>
+    </div>
+  </body>
+</html>
